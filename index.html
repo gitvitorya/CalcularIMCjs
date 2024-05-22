@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULAR IMC</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+ <div class="container">
+    <div id="calc-container" >
+        <h2>CALCULADORA DE IMC</h2>
+        <form id="imc-form">
+            <div class="form-inputs">
+                <div class="form-control">
+                    <label for="altura">Altura:</label>
+                    <input type="text" name="altura" id="altura" placeholder="Exemplo: 1,56">
+                </div>
+                <div class="form-control">
+                    <label for="peso">Peso:</label>
+                    <input type="text" name="peso" id="peso" placeholder="Exemplo: 60,3">
+                </div>
+            </div>
+            <div class="action-control">
+                <button class="calc-btn">CALCULAR</button>
+                <button class="clear-btn">LIMPAR</button>
+            </div>
+        </form>
+    </div>
+    <div class="result-container hide" >
+        <p id="imc-number">SEU IMC É: <span></span> </p>
+        <p id="imc-info">SITUAÇÃO ATUAL: <span></span> </p>
+        <h3>CONFIRA AS CLASSIFICAÇÕES</h3>
+        <div id="imc-table">
+            <div class="table-header">
+                <h4>ÍNDICE</h4>
+                <h4>CLASSIFICAÇÃO</h4>
+                <h4>OBESIDADE</h4>
+            </div>
+            <div class="table-data">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>    
+        <button id="back-btn">VOLTAR</button>
+    </div>
+ </div>
+</body>
+</html>
